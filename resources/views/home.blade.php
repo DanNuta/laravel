@@ -16,6 +16,22 @@ $elevi = [
 
 
 @foreach ($elevi as $item)
+  
+
+ @switch($item["nume"])
+     @case("Dan")
+         <h1>Pentru{{ $item["nume"]}}nota {{ $item["age"] }}</h1>
+         <p>{{ $item["age"] }}</p>
+         @break
+
+         @case("Vasile")
+         <h1>Pentru{{ $item["nume"]}}nota {{ $item["age"] }}</h1>
+         <p>{{ $item["age"] }}</p>
+         @break
+ 
+     @default
+         
+ @endswitch
 
  @if ($item["nume"] === "Vasile")
  <div class="div">
