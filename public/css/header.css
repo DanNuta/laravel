@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: rgb(2, 124, 180);
+}
+
+header ul {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+header ul li a {
+    color: white;
+}
+header ul li:hover {
+    height: 100%;
+    background-color: pink;
+}
+
+.active {
+    background-color: pink;
+}
